@@ -35,14 +35,16 @@ export class Header extends Component {
     </Nav>
    </Navbar.Collapse>
  </Navbar>
- </div>
+ 
               <Route path="/home"  component={Home}/>
               <Route path="/about"  component={About}/>
               <Route path="/buttons"  component={Buttons}/>
               <Route path="/forms"  component={Forms}/>
               <Route path="/image"  component={Images}/>          
-   
+    
+    </div>
   </Router>
+
     );
   
 }
