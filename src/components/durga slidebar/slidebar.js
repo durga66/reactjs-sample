@@ -43,7 +43,7 @@ export class Sidebar extends Component {
                     </NavItem>
                     <NavItem eventKey="about">
                         <NavIcon>
-                            <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} />
+                            {/* <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} /> */}
                         </NavIcon>
                         <NavText>
                             About
