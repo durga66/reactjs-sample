@@ -11,6 +11,7 @@ export class User extends Component {
   render() {
     return (
       <Router>
+        <br/>
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <Link to={'/'} className="navbar-brand">React CRUD Example</Link>
