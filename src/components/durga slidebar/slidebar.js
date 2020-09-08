@@ -54,7 +54,7 @@ export class Sidebar extends Component {
             <main>
                 <Route path="/user" exact component={props => <User />} />
                 {/* <Route path="/user" component={props => <User />} /> */}
-                {/* <Route path="/about" component={props => <About />} /> */}
+                <Route path="/about" component={props => <About />} />
             </main>
         </React.Fragment>
     )}
