@@ -13,9 +13,9 @@ import {User} from '../user/user'
      
 //     )
 //   }
-//   const About = () =>{
-//     return(<h1> Welcome To About Page</h1>)
-//   }
+  const About = () =>{
+    return(<h1> Welcome To About Page</h1>)
+  }
 export class Sidebar extends Component {
     render(){
   return (
