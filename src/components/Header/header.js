@@ -8,6 +8,7 @@ import {About} from '../About/about'
 import Buttons from '../Buttons/button';
 import {Forms} from '../Forms/forms';
 import {Images} from '../Images/image'
+import { Sidebar } from '../durga slidebar/slidebar';
 
 export class Header extends Component {
     render(){
@@ -29,7 +30,7 @@ export class Header extends Component {
       </NavDropdown>
     </Nav>
    <Nav>
-   <Nav.Link href="#durga">Durga</Nav.Link>
+   <Nav.Link href="/sidebar">Durga</Nav.Link>
    <Nav.Link href="#purna">Purna</Nav.Link>
    <Nav.Link href="#sriya">Sriya</Nav.Link>
     </Nav>
@@ -40,7 +41,8 @@ export class Header extends Component {
               <Route path="/about"  component={About}/>
               <Route path="/buttons"  component={Buttons}/>
               <Route path="/forms"  component={Forms}/>
-              <Route path="/image"  component={Images}/>          
+              <Route path="/image"  component={Images}/>
+              <Route path="/sidebar"  component={Sidebar}/>          
     
     </div>
   </Router>
