@@ -8,16 +8,17 @@ import Index from '../curd components/index.component';
 import { CurdHome } from '../curd home/curdhome';
 
 export class User extends Component {
+  
   render() {
     return (
       <Router>
-        <br/>
+        <br />
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <Link to={'/'} className="navbar-brand">React CRUD Example</Link>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
+                <li className="nav-item">
                   <Link to={'/curdhome'} className="nav-link">Home</Link>
                 </li>
                 <li className="nav-item">
@@ -29,12 +30,14 @@ export class User extends Component {
               </ul>
             </div>
           </nav>
+          <br />
+          
           <Switch>
-          <Route exact path='/curdhome' component={ CurdHome } />
+            <Route exact path='/curdhome' component={CurdHome} />
 
-              <Route exact path='/create' component={ Create } />
-              <Route path='/edit/:id' component={ Edit } />
-              <Route path='/index' component={ Index } />
+            <Route exact path='/create' component={Create} />
+            <Route path='/edit/:id' component={Edit} />
+            <Route path='/index' component={Index} />
           </Switch>
         </div>
       </Router>

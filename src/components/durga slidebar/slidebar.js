@@ -3,10 +3,14 @@ import React,{Component} from 'react';
 import Route from 'react-router-dom/Route';
 import {BrowserRouter as Router } from 'react-router-dom';
 // import {  MDBIcon } from "mdbreact";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Coffee } from '@fortawesome/free-solid-svg-icons'
+
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import {User} from '../user/user'
+
+
 // const User = () =>{
 //     return(
 //     <h1> Welcome User:Durga</h1>
@@ -35,7 +39,7 @@ export class Sidebar extends Component {
                 <SideNav.Nav defaultSelected="user">
                     <NavItem eventKey="user">
                         <NavIcon>
-                        {/* <FontAwesomeIcon icon="coffee" rotation={90} />                   */}
+                        <FontAwesomeIcon icon="coffee" rotation={90} />                  
               </NavIcon>
                         <NavText>
                             curdoperations
