@@ -28,10 +28,7 @@ export class GetMethod extends Component {
             <div className="get">
                 <br/>
               List of Posts(Get Method){
-
-                
-               
-            
+                         
 <Table striped bordered hover>
   <thead>
     <tr>
@@ -45,7 +42,7 @@ export class GetMethod extends Component {
 
   <tbody>
   { (posts.length > 0) ? posts.map( (post, index) => {
-           return (
+    return (
             <tr key={ index } >
               <td>{ post.userId }</td>
               <td>{ post.id }</td>
@@ -57,9 +54,11 @@ export class GetMethod extends Component {
       </tbody>
 </Table>
 }
-                {errorMsg ? <div>{errorMsg}</div>:null} 
+{errorMsg ? <div>{errorMsg}</div>:null} 
              
 </div>
-    )
-    }
+)
+    
+}
+
 }
