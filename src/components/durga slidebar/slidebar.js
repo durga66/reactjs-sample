@@ -3,13 +3,15 @@ import React,{Component} from 'react';
 import Route from 'react-router-dom/Route';
 import {BrowserRouter as Router } from 'react-router-dom';
 // import {  MDBIcon } from "mdbreact";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Coffee } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { Coffee } from '@fortawesome/free-solid-svg-icons'
 
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import {User} from '../user/user'
-
+import {UserInput} from '../Hooks concept/hooks.js'
+import {GetMethod} from '../Get Method/get'
+import { PostMethod } from '../Post Method/post';
 
 // const User = () =>{
 //     return(
@@ -17,9 +19,9 @@ import {User} from '../user/user'
      
 //     )
 //   }
-  const About = () =>{
-    return(<h1> Welcome To About Page</h1>)
-  }
+//   const About = () =>{
+//     return(<h1> Welcome To About Page</h1>)
+//   }
 export class Sidebar extends Component {
     render(){
   return (
@@ -39,26 +41,43 @@ export class Sidebar extends Component {
                 <SideNav.Nav defaultSelected="user">
                     <NavItem eventKey="user">
                         <NavIcon>
-                        <FontAwesomeIcon icon="coffee" rotation={90} />                  
+                        {/* <FontAwesomeIcon icon="coffee" rotation={90} />                   */}
               </NavIcon>
                         <NavText>
                             curdoperations
                         </NavText>
                     </NavItem>
-                    <NavItem eventKey="about">
+                    <NavItem eventKey="hooks">
                         <NavIcon>
                             {/* <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} /> */}
                         </NavIcon>
                         <NavText>
-                            About
+                            Hooks
+                        </NavText>
+                    </NavItem>
+                    <NavItem eventKey="get">
+                        <NavIcon>
+                            {/* <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} /> */}
+                        </NavIcon>
+                        <NavText>
+                            Get Method
+                        </NavText>
+                    </NavItem>
+                    <NavItem eventKey="post">
+                        <NavIcon>
+                            {/* <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} /> */}
+                        </NavIcon>
+                        <NavText>
+                            Post Method
                         </NavText>
                     </NavItem>
                 </SideNav.Nav>
             </SideNav>
             <main>
                 <Route path="/user" exact component={props => <User />} />
-                {/* <Route path="/user" component={props => <User />} /> */}
-                <Route path="/about" component={props => <About />} />
+                <Route path="/get" component={props => <GetMethod />} />
+                <Route path="/hooks" component={props => <UserInput />} />
+                <Route path="/post" component={props => <PostMethod />} />
             </main>
         </React.Fragment>
     )}

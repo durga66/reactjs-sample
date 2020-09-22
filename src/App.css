@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+.get{
+  display:inline-block;
+  margin:10px;
+  border:8px solid white;
+  box-shadow:0 2px 2px #ccc;
+  width:1090px;
+  padding:20px;
+background-color:rgb(241, 174, 74);
+}
+
+.post{
+  display:inline-block;
+  margin:10px;
+  border:1px solid #eee;
+  box-shadow:0 2px 2px #ccc;
+  width:600px;
+  padding:20px;
+  background-color:white
+}

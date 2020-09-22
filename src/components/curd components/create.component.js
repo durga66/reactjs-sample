@@ -50,6 +50,7 @@ export default class Create extends Component {
  
   render() {
     return (
+      <div className="Home">
         <div style={{ marginTop: 10 }}>
             <h3 align="center">Add New Business</h3>
             <form onSubmit={this.onSubmit}>
@@ -84,6 +85,7 @@ export default class Create extends Component {
                       className="btn btn-primary"/>
                 </div>
             </form>
+        </div>
         </div>
     )
   }
