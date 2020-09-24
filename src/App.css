@@ -55,3 +55,12 @@ background-color:rgb(241, 174, 74);
   padding:20px;
   background-color:white
 }
+
+.app{
+  display:flex;
+  justify-content:center;
+}
+.chart{
+  width: 720px;
+  background-color: white;
+}

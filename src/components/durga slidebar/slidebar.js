@@ -12,6 +12,10 @@ import {User} from '../user/user'
 import {UserInput} from '../Hooks concept/hooks.js'
 import {GetMethod} from '../Get Method/get'
 import { PostMethod } from '../Post Method/post';
+import LineChart from '../Charts/linechart';
+import BarChart from '../Charts/barchart'
+import DoughnutChart from '../Charts/doughnutchart';
+import PieExample from '../Charts/piechart'
 
 // const User = () =>{
 //     return(
@@ -71,13 +75,27 @@ export class Sidebar extends Component {
                             Post Method
                         </NavText>
                     </NavItem>
+                    <NavItem eventKey="charts">
+                        <NavIcon>
+                            {/* <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} /> */}
+                        </NavIcon>
+                        <NavText>
+                            Charts
+                        </NavText>
+                    </NavItem>
+
                 </SideNav.Nav>
             </SideNav>
             <main>
                 <Route path="/user" exact component={props => <User />} />
                 <Route path="/get" component={props => <GetMethod />} />
                 <Route path="/hooks" component={props => <UserInput />} />
-                <Route path="/post" component={props => <PostMethod />} />
+                <Route path="/post" component={props => <PostMethod />} /><br/>
+                 <Route path="/charts" component={props => <LineChart />} /><br/><br/>
+                   <Route path="/charts" component={props => <BarChart />} /><br/><br/>
+                   <Route path="/charts" component={props => <DoughnutChart />}/><br/><br/>
+                   <Route path="/charts" component={props => <PieExample />}/><br/><br/><br/>
+                  
             </main>
         </React.Fragment>
     )}
